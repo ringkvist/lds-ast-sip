@@ -30,19 +30,12 @@ Install Ubuntu based Asterisk server
     d. make test calls using 
 	  It worked like a charm :-)
     
-Step 2 - Setup test environment for application/framework test
-    - NGINX
-    - choose... framework
-    - Test 
-    - Decide
-    - choose... framework
-    - Decide 
-    ....
-    CHOOSE (a node.js based framework would be preferred)
+Step 2 - Test application/framework 
+      Make a choice - a node.js based framework would be preferred.
     
 Step 3 - Test and extend the chosen framework
     - Make sure there is APIs for all situations (transfer calls, in/out of queue... etc.)
 	- The result must be a complete API for all the needed functions - which will be used for the development of the GUI.
 
 Step 4 - Now things get real exciting :-) 
-	- Develop the GUI in the LDS.
+	- Develop the GUI in the LDS...
