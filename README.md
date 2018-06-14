@@ -11,14 +11,26 @@ The list of frameworks might not yet be complete - but the following frameworks 
 
 I see the project in the following steps:
 
-Step 1 - Create PBX test environment
+Step 1 - Create PBX test environment (DONE)
 Install Ubuntu based Asterisk server
-    - base install (MIR)
-        - make sure to make detailed install steps (MIR) 
-    - setup two local extensions (MIR)
-    - make test calls using a soft phone (MIR)
+
+    a. base install
+	  I installed an Ubuntu 16.04 as a virtual machine using vmware
+	  
+    b. setting up Asterisk 
+	  The setup was done by the help from Mike42: https://mike42.me/blog/2015-01-02-how-to-set-up-asterisk-in-10-minutes The only issue I encountered was and apparently old issue with res_pjsip.so, therefore I inserted the following in the '/etc/asterisk/modules.conf' file:
+	  
+	  [modules]
+	  autoload=yes
+	  noload => res_pjsip.so
+	  
+    c. setup two local extensions 
+	  I had two spare Cisco SPA504G phones laying around - which I used for extension 6001 and 6002. A softphone could obviously be used instead.
+	  
+    d. make test calls using 
+	  It worked like a charm :-)
     
-Step 2 - Setup web environment for application test
+Step 2 - Setup test environment for application/framework test
     - NGINX
     - choose... framework
     - Test 
