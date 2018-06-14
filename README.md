@@ -26,12 +26,11 @@ Step 2 - Setup web environment for application test
     - choose... framework
     - Decide 
     ....
-    CHOOSE
+    CHOOSE (a node.js based framework would be preferred)
     
-Step 3 - Install web server environment
-    - NGINX based webserver
-    - React, Node.js... (Help me here Sean :-) )
-    - "Insert" chosen framework into the framework
-    - Test
+Step 3 - Test and extend the chosen framework
+    - Make sure there is APIs for all situations (transfer calls, in/out of queue... etc.)
+	- The result must be a complete API for all the needed functions - which will be used for the development of the GUI.
 
 Step 4 - Now things get real exciting :-) 
+	- Develop the GUI in the LDS.
